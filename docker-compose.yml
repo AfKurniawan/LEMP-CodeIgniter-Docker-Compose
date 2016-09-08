@@ -40,7 +40,7 @@ services:
   data:
     build: ./data
     volumes:
-      - ./debian_volume/public_html:/data
+      - ./debian_volume/public_html:/var/www/html
       - ./debian_volume/mysql_data:/var/lib/mysql
       - ./debian_volume/nginx/logs:/var/log/nginx
 
